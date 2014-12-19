@@ -326,8 +326,8 @@ class EpubNav(EpubHtml):
 
 
 class EpubImage(EpubItem):
-    def __init__(self):
-        super(EpubImage, self).__init__()
+    def __init__(self, uid=None, file_name='', media_type='', content=''):
+        super(EpubImage, self).__init__(uid, file_name, media_type, content)
 
     def get_type(self):
         return ebooklib.ITEM_IMAGE
